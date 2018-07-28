@@ -1,0 +1,2 @@
+# ARP_sed_rev
+在Android通过ARP询问实现获取同一网络所有设备的MAC地址，AP隔离的网络除外
