@@ -11,7 +11,10 @@ arprev.c
 运行：sudo ./arprev ens33  //ens33是网卡名，参数放在外面易于操作
 交叉编译在Android上运行的程序：
 arm-none-linux-guneabi-gcc arprev.c -o arprev --static -I /pcap_include/ -lpcap
-pcap_include是pcap.h库，-lpcap 是要自己使用交叉工具变成适用于Android的libpcap.so库
+pcap_include是pcap.h库，-lpcap 是要自己使用交叉工具变成适用于Android的libpcap.a库
+
+动态库：libpcap.so
+静态库：libpcap.a
 
 
 
