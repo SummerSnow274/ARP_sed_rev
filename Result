@@ -1,0 +1,31 @@
+root@hermes:/system # cat devices_mac.txt
+
+Sender IP: 192.168.1.199        Sender MAC: 3C:AF:02:90:05:8E
+Sender IP: 192.168.1.110        Sender MAC: 00:0C:29:DB:30:C0
+Sender IP: 192.168.1.208        Sender MAC: 00:0C:29:5F:64:E7
+Sender IP: 192.168.1.209        Sender MAC: 00:0C:29:4C:54:97
+Sender IP: 192.168.1.210        Sender MAC: 00:0C:29:26:AF:B8
+Sender IP: 192.168.1.218        Sender MAC: 00:0C:29:5F:64:E7
+Sender IP: 192.168.1.127        Sender MAC: D8:C8:E9:63:80:5A
+Sender IP: 192.168.1.222        Sender MAC: FC:7C:02:4F:56:F7
+Sender IP: 192.168.1.132        Sender MAC: 40:8D:5C:20:76:00
+Sender IP: 192.168.1.136        Sender MAC: 00:0C:29:D6:3B:CC
+Sender IP: 192.168.1.231        Sender MAC: 00:0C:29:C0:92:97
+Sender IP: 192.168.1.233        Sender MAC: 00:0C:29:69:0E:69
+Sender IP: 192.168.1.235        Sender MAC: 00:0C:29:2B:00:C4
+Sender IP: 192.168.1.238        Sender MAC: 00:0C:29:57:19:0A
+Sender IP: 192.168.1.250        Sender MAC: 00:24:E8:77:3A:C7
+Sender IP: 192.168.1.254        Sender MAC: 58:BC:27:F0:15:08
+Sender IP: 192.168.1.2  Sender MAC: 74:7D:24:52:C7:5E
+Sender IP: 192.168.1.8  Sender MAC: 00:0C:29:98:7B:93
+Sender IP: 192.168.1.9  Sender MAC: 00:0C:29:53:72:67
+Sender IP: 192.168.1.110        Sender MAC: 00:0C:29:DB:30:C0
+Sender IP: 192.168.1.127        Sender MAC: D8:C8:E9:63:80:5A
+Sender IP: 192.168.1.132        Sender MAC: 40:8D:5C:20:76:00
+Sender IP: 192.168.1.136        Sender MAC: 00:0C:29:D6:3B:CCroot@hermes:/system #
+root@hermes:/system # cat arpsrall.sh
+./arpsedall wlan0 &
+./arprevall wlan0 >devices_mac.txt &
+sleep 3
+./arpsedall wlan0 &
+root@hermes:/system #
